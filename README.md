@@ -5,7 +5,7 @@ Technology used:
 * React JS
   * React Styled Components
   * Hooks
-  * Redux
+  * React Router
 * JSX
 * HTML
 * Styling using material ui
