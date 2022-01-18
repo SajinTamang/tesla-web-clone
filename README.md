@@ -8,7 +8,8 @@ Technology used:
   * Redux
 * JSX
 * HTML
-* CSS
+* Styling using material ui
+* Animation using React Reveal library
 
 Process to create this app.
 
