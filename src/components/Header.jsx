@@ -10,18 +10,18 @@ function Header() {
 
     return (
         <Container>
-            <a>
-                <img className="HeaderLogo" src ="/Images/logo.svg" / >
+            <a href={() => false}>
+                <img className="HeaderLogo" src ="/Images/logo.svg" alt="Tesla Logo" / >
             </a>
             <Menu>
-                <a href="#">Model 3</a>
-                <a href="#">Model Y</a>
-               <a href="#">Model S</a>
-                <a href="#">Model X</a>
+                <a href={() => false}>Model 3</a>
+                <a href={() => false}>Model Y</a>
+               <a href={() => false}>Model S</a>
+                <a href={() => false}>Model X</a>
             </Menu>
             <RightMenu>
-                <a href="#">Shop</a>
-                <a href="#">Tesla Account</a>
+                <a href={() => false}>Shop</a>
+                <a href={() => false}>Tesla Account</a>
             <CustomMenu onClick={()=> setBurgerStatus(true)}/>
             </RightMenu>
            
@@ -30,19 +30,16 @@ function Header() {
                 <CloseWrapper>
                     <CustomClose onClick={()=> setBurgerStatus(false)}/>
                 </CloseWrapper>
-                    <li> <a href="#">Existing Inventory</a></li>
-                    <li> <a href="#">Used Inventory</a></li>
-                    <li> <a href="#">Trade-In</a></li>
-                    <li> <a href="#">Cybertruck</a></li>
-                    <li> <a href="#">Roadaster</a></li>
-                    <li>  <a href="#">Model 3</a></li>
-                    <li>  <a href="#">Model Y</a></li>
-                    <li>  <a href="#">Model S</a></li>
-                    <li>  <a href="#">Model X</a></li>
-                    <li>  <a href="#">Solar Panel</a></li>
-                    
-                    
-                 
+                    <li> <a href={() => false}>Existing Inventory</a></li>
+                    <li> <a href={() => false}>Used Inventory</a></li>
+                    <li> <a href={() => false}>Trade-In</a></li>
+                    <li> <a href={() => false}>Cybertruck</a></li>
+                    <li> <a href={() => false}>Roadaster</a></li>
+                    <li>  <a href={() => false}>Model 3</a></li>
+                    <li>  <a href={() => false}>Model Y</a></li>
+                    <li>  <a href={() => false}>Model S</a></li>
+                    <li>  <a href={() => false}>Model X</a></li>
+                    <li>  <a href={() => false}>Solar Panel</a></li>                 
             </BurgerNav>
         </Container>
     )
