@@ -21,9 +21,9 @@ function Model3() {
                     LeftDescription="Up to 10 teraflops of processing power enables in-car gaming on-par with today’s newest consoles. Wireless controller compatibility lets you game from any seat."
                 />
                  <DetailInfo 
-                    LeftSrc="/Images/connected.jpg"
-                    RightHeadingTitle ="Stay Connected"
-                    RightDescription="Multi-device Bluetooth, wireless and USB-C charging for every passenger, with enough power to fast-charge your tablets and laptop."
+                    RightSrc="/Images/connected.jpg"
+                    LeftHeadingTitle ="Stay Connected"
+                    LeftDescription="Multi-device Bluetooth, wireless and USB-C charging for every passenger, with enough power to fast-charge your tablets and laptop."
                 />
                  <DetailInfo 
                     RightSrc="/Images/audio.jpg"

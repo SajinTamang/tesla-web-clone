@@ -43,3 +43,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.ReverseDivision{
+  display: flex;
+  flex-direction: row-reverse;
+}
