@@ -41,11 +41,6 @@ function Header() {
                 <CloseWrapper>
                     <CustomClose onClick={()=> setBurgerStatus(false)}/>
                 </CloseWrapper>
-                    <li> <a href="/">Existing Inventory</a></li>
-                    <li> <a href="/">Used Inventory</a></li>
-                    <li> <a href="/">Trade-In</a></li>
-                    <li> <a href="/">Cybertruck</a></li>
-                    <li> <a href="/">Roadaster</a></li>
                    <li> <NavLink  to="/Model3">Model 3
                      </NavLink></li>
                        <li>  <NavLink  to="/ModelY">Model Y
