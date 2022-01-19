@@ -46,10 +46,14 @@ function Header() {
                     <li> <a href="/">Trade-In</a></li>
                     <li> <a href="/">Cybertruck</a></li>
                     <li> <a href="/">Roadaster</a></li>
-                    <li>  <a href="/">Model 3</a></li>
-                    <li>  <a href="/">Model Y</a></li>
-                    <li>  <a href="/">Model S</a></li>
-                    <li>  <a href="/">Model X</a></li>
+                   <li> <NavLink  to="/Model3">Model 3
+                     </NavLink></li>
+                       <li>  <NavLink  to="/ModelY">Model Y
+                         </NavLink></li>
+                      <li>   <NavLink  to="/ModelS">Model S
+                        </NavLink></li>
+                      <li>   <NavLink  to="/ModelX">Model X
+                        </NavLink></li>
                     <li>  <a href="/">Solar Panel</a></li>                 
             </BurgerNav>
         </Container>
