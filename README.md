@@ -10,6 +10,7 @@ Technology used:
 * HTML
 * Styling using material ui
 * Animation using React Reveal library
+* React Router.
 
 Process to create this app.
 
