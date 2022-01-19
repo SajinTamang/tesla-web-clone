@@ -75,8 +75,8 @@ const Left = styled.div`
 
     @media(max-width:600px){
         width:100%;
-        padding:30px;
-        height:50%;
+        padding:10px;
+        height:60%;
     }
 `;
 
@@ -93,7 +93,7 @@ const Right = styled.div`
 
     @media(max-width:600px){
         width:100%;
-        height:50%;
+        height:40%;
     }
 `;
 
