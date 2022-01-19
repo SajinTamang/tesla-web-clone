@@ -15,7 +15,12 @@ function Section({title, description,backgroundImg,leftBtnText,rightBtnText}) {
             <Buttons> 
                  <Fade bottom>               
                 <ButtonGroup>
-                    <LeftButton> {leftBtnText} </LeftButton>
+                    {leftBtnText &&
+                    <LeftButton>
+                         {leftBtnText} 
+                    </LeftButton>
+                    }
+                    
                     {rightBtnText &&
                     <RightButton>
                          {rightBtnText} 
@@ -40,12 +45,11 @@ const Wrap = styled.div`
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-image: url('/Images/model-s.jpg');
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items:center;
-      background-image: ${props => `url("/images/${props.bgImage}")`}
+      background-image: ${props => `url("/Images/${props.bgImage}")`}
 `;
 
 const ItemText = styled.div`

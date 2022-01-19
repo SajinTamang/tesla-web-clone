@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       <div className="App">
-        <Header />
         <Router>
+          <Header />
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/Model3" element={<Model3 />} />

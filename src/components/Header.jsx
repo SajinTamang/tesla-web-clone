@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styled from "styled-components";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-
+import {NavLink } from "react-router-dom";
 
 function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
@@ -10,18 +10,29 @@ function Header() {
     return (
         
         <Container>
-            <a href={() => false}>
-                <img className="HeaderLogo" src ="/Images/logo.svg" alt="Tesla Logo" / >
-            </a>
+
+            <NavLink  to="/">
+                 <img className="HeaderLogo" src ="/Images/logo.svg" alt="Tesla Logo" / >
+                </NavLink>
+
             <Menu>
-               <a href={() => false}>Model 3</a>
+                <NavLink  to="/Model3">Model 3
+                </NavLink>
+                <NavLink  to="/ModelY">Model Y
+                </NavLink>
+                <NavLink  to="/ModelS">Model S
+                </NavLink>
+                <NavLink  to="/ModelX">Model X
+                </NavLink>
+
+               {/* <a href={() => false}>Model 3</a>
                   <a href={() => false}>Model Y</a>
                 <a href={() => false}>Model S</a>
-                 <a href={() => false}>Model X</a>
+                 <a href={() => false}>Model X</a> */}
             </Menu>
             <RightMenu>
-                <a href={() => false}>Shop</a>
-                <a href={() => false}>Tesla Account</a>
+                <a href="/">Shop</a>
+                <a href="/">Tesla Account</a>
             <CustomMenu onClick={()=> setBurgerStatus(true)}/>
             </RightMenu>
            
@@ -30,16 +41,16 @@ function Header() {
                 <CloseWrapper>
                     <CustomClose onClick={()=> setBurgerStatus(false)}/>
                 </CloseWrapper>
-                    <li> <a href={() => false}>Existing Inventory</a></li>
-                    <li> <a href={() => false}>Used Inventory</a></li>
-                    <li> <a href={() => false}>Trade-In</a></li>
-                    <li> <a href={() => false}>Cybertruck</a></li>
-                    <li> <a href={() => false}>Roadaster</a></li>
-                    <li>  <a href={() => false}>Model 3</a></li>
-                    <li>  <a href={() => false}>Model Y</a></li>
-                    <li>  <a href={() => false}>Model S</a></li>
-                    <li>  <a href={() => false}>Model X</a></li>
-                    <li>  <a href={() => false}>Solar Panel</a></li>                 
+                    <li> <a href="/">Existing Inventory</a></li>
+                    <li> <a href="/">Used Inventory</a></li>
+                    <li> <a href="/">Trade-In</a></li>
+                    <li> <a href="/">Cybertruck</a></li>
+                    <li> <a href="/">Roadaster</a></li>
+                    <li>  <a href="/">Model 3</a></li>
+                    <li>  <a href="/">Model Y</a></li>
+                    <li>  <a href="/">Model S</a></li>
+                    <li>  <a href="/">Model X</a></li>
+                    <li>  <a href="/">Solar Panel</a></li>                 
             </BurgerNav>
         </Container>
     )
@@ -68,7 +79,7 @@ const Menu = styled.div`
     flex: 1;
     justify-content: center;
 
-    a,Link{
+    a,NavLink{
         font-weight: 600;
         text-transform: uppercase;
         padding:0 10px;
