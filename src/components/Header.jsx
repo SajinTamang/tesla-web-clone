@@ -7,17 +7,17 @@ import CloseIcon from '@material-ui/icons/Close';
 function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
 
-
     return (
+        
         <Container>
             <a href={() => false}>
                 <img className="HeaderLogo" src ="/Images/logo.svg" alt="Tesla Logo" / >
             </a>
             <Menu>
-                <a href={() => false}>Model 3</a>
-                <a href={() => false}>Model Y</a>
-               <a href={() => false}>Model S</a>
-                <a href={() => false}>Model X</a>
+               <a href={() => false}>Model 3</a>
+                  <a href={() => false}>Model Y</a>
+                <a href={() => false}>Model S</a>
+                 <a href={() => false}>Model X</a>
             </Menu>
             <RightMenu>
                 <a href={() => false}>Shop</a>
@@ -68,7 +68,7 @@ const Menu = styled.div`
     flex: 1;
     justify-content: center;
 
-    a{
+    a,Link{
         font-weight: 600;
         text-transform: uppercase;
         padding:0 10px;

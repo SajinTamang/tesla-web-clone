@@ -9,7 +9,7 @@ function Home() {
            
             <Section
                 title="Model 3"
-                description =" Order Online for Touchless Delivery"
+                description =" Electric vehicle incentives are now available on eligible Model 3 in ACT, NSW, TAS and VIC."
                 backgroundImg = "model-3.jpg"
                 leftBtnText = "Custom order"
                 rightBtnText= "Existing inventory"
@@ -31,14 +31,14 @@ function Home() {
         
              <Section
                 title="Model S"
-                description =" Order Online for Touchless Delivery"
+                description ="Schedule a Touchless Test Drive"
                 backgroundImg = "model-s.jpg"
                 leftBtnText = "Custom order"
                 rightBtnText= "Existing inventory"
             />
             <Section
                 title="Model X"
-                description = "Order Online for Touchless Delivery"
+                description = "Schedule a Touchless Test Drive"
                 backgroundImg = "model-x.jpg"
                 leftBtnText = "Custom order"
                 rightBtnText= "Existing inventory"
@@ -57,7 +57,8 @@ function Home() {
                 leftBtnText = "Custom order"
                 
             />
-        
+
+
         </Container>
     )
 }
