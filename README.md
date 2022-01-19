@@ -8,8 +8,9 @@ Technology used:
   * React Router
 * JSX
 * HTML
-* Styling using material ui
+* Styling using material ui , CSS
 * Animation using React Reveal library
+* React Router.
 
 Process to create this app.
 
