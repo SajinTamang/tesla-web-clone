@@ -32,7 +32,8 @@ function Header() {
             </Menu>
             <RightMenu>
                 <a href="/">Shop</a>
-                <a href="/">Tesla Account</a>
+               <NavLink  to="/sign-in">Tesla Account
+                </NavLink>
             <CustomMenu onClick={()=> setBurgerStatus(true)}/>
             </RightMenu>
            
