@@ -3,10 +3,17 @@ import styled from "styled-components";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import {NavLink } from "react-router-dom";
+import {useAuthStatus} from "./hooks/useAuthStatus";
 
 function Header() {
+   
     const [burgerStatus, setBurgerStatus] = useState(false);
-
+     const {checkingStatus,profileTitle}= useAuthStatus();
+      if(checkingStatus){
+         return <h1>Loading</h1>
+    }
+  
+  
     return (
         
         <Container>
@@ -25,14 +32,10 @@ function Header() {
                 <NavLink  to="/ModelX">Model X
                 </NavLink>
 
-               {/* <a href={() => false}>Model 3</a>
-                  <a href={() => false}>Model Y</a>
-                <a href={() => false}>Model S</a>
-                 <a href={() => false}>Model X</a> */}
             </Menu>
             <RightMenu>
-                <a href="/">Shop</a>
-               <NavLink  to="/sign-in">Tesla Account
+                <NavLink to="/">Shop</NavLink>
+               <NavLink  to="/car-list">{profileTitle}
                 </NavLink>
             <CustomMenu onClick={()=> setBurgerStatus(true)}/>
             </RightMenu>
@@ -50,7 +53,9 @@ function Header() {
                         </NavLink></li>
                       <li>   <NavLink  to="/ModelX">Model X
                         </NavLink></li>
-                    <li>  <a href="/">Solar Panel</a></li>                 
+                    <li><NavLink to="/">Solar Panel</NavLink></li>   
+                                  
+                  
             </BurgerNav>
         </Container>
     )

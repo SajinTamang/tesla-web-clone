@@ -9,6 +9,7 @@ import './App.css';
 
 import Header from "./components/Header";
 import Home from "./components/Home";
+import PrivateRoute from "./components/PrivateRoute";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import CarList from "./components/Pages/CarList";
@@ -33,7 +34,9 @@ function App() {
             <Route exact path="/ModelX" element={<ModelX />} />
             <Route exact path="/sign-in" element={<SignIn />} />
             <Route exact path="/sign-up" element={<SignUp />} />
-            <Route exact path="/car-list" element={<CarList />} />
+            <Route exact path="/car-list" element={<PrivateRoute/>} >
+              <Route path="/car-list" element={<CarList/>}/>
+            </Route>
 
             <Route path="*" element={<ErrorPage />} />
           </Routes>

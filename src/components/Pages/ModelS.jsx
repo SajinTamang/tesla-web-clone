@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from '../Section';
-import Interior from './components/Interior';
-import DetailInfo from './components/DetailInfo';
+import Interior from './CarDetail/Interior';
+import DetailInfo from './CarDetail/DetailInfo';
 
 function ModelS() {
     return (
