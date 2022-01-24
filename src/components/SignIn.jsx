@@ -55,6 +55,9 @@ function SignIn() {
        setShowPassword((prevState) => !prevState)}/>
        </PasswordWrapper>
      <Button>Sign in </Button>
+     <Link to="/forgot-password" className='registerButton'>
+       Forgot Password
+     </Link>
      <GoogleAuthentication/>
      <Link to="/sign-up" className='registerButton'>
        Not a member ? Register

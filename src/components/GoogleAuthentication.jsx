@@ -32,7 +32,7 @@ function GoogleAuthentication() {
                     })
                 }
                 else if(docSnap.exists()){
-                 alert("user Already Exist");
+                 toast.success(`Welcome back ${user.displayName}`);
                 }
                 navigate("/")
 
@@ -53,10 +53,12 @@ const GoogleContainer = styled.div`
     display: flex;
     align-items: center;
     margin: 10px;
+    padding: 15px 20px;
+    border:2px solid lightgray;
+    background-color: #ccc;
 `
-const Image = styled.img`
-    margin:10px;
-`;
+const Image = styled.img``;
 const SmallText = styled.h3`
     margin-right: 10px;
+    color: black;
 `;

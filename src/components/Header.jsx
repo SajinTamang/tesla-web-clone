@@ -34,7 +34,7 @@ function Header() {
 
             </Menu>
             <RightMenu>
-                <NavLink to="/">Shop</NavLink>
+                <NavLink to="/Shop">Shop</NavLink>
                <NavLink  to="/car-list">{profileTitle}
                 </NavLink>
             <CustomMenu onClick={()=> setBurgerStatus(true)}/>

@@ -51,23 +51,16 @@ function CarList() {
             toast.error("could not update profile details");
         }
   }
-  return <CarContainer>Car List to buy
- <header className="profileHeader">
-      <p className="pageHeader">
-        
+  return <CarContainer>
        <p onClick={()=>{
          changeDetails && onSubmit();
           setChangeDetails((prevState)=>!prevState);
-       }}>{changeDetails ? <button>Save</button>: <button>Edit</button>}</p>
-       <form>
-        <input type="text" value= {name} id="name" disabled={!changeDetails} onChange={onChange}/>
-        <input type="text" value= {email} id="email" disabled={!changeDetails} onChange={onChange}/>
-        </form>
-      </p>
-      <button type="button" className="logOut" onClick={onLogout}>Logout</button>
-    </header>
-
-
+       }}>{changeDetails ? <ButtonGreen >Save</ButtonGreen>: <ButtonBlue>Edit</ButtonBlue>}</p>
+       <Form>
+        <Input type="text" value= {name} id="name" disabled={!changeDetails} onChange={onChange}/>
+        <Input type="text" value= {email} id="email" disabled={!changeDetails} onChange={onChange}/>
+        </Form>
+      <ButtonRed type="button" onClick={onLogout}>Logout</ButtonRed>
   </CarContainer>;
 }
 
@@ -77,4 +70,37 @@ export default CarList;
 const CarContainer = styled.div`
     width: 100%;
     margin-top:60px;
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+    /* background-color: lightgray; */
 `;
+
+const Form=styled.form`
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 60px;
+   
+
+`
+const ButtonRed = styled.button`
+  padding:20px;
+   border:none;
+   cursor: pointer;
+   background-color: red;
+   color: white;
+   font-weight: 600;
+`
+const ButtonBlue = styled(ButtonRed)`
+   background-color: #1336d1;
+`;
+const ButtonGreen = styled(ButtonRed)`
+   background-color: #06c04d;
+`
+
+const Input= styled.input`
+padding:20px;
+ border:none;
+
+ `

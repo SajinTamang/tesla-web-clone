@@ -97,14 +97,12 @@ const signUp = async (e)=>{
       <ButtonWrapper> 
      <Button>Sign up</Button>
        <GoogleAuthentication/>
-      <Link to="/sign-in" className='registerButton'>
+     </ButtonWrapper>
+       <Link to="/sign-in" className='registerButton'>
        Already a member ? Sign in 
      </Link>
-     </ButtonWrapper>
 </Form>
-      {/* <Link to="/sign-in" className='registerLink'>
-          Sign In Instead
-        </Link> */}
+
  </SignUpContainer>
       
   );
@@ -184,5 +182,7 @@ const Text = styled.span`
 
 const ButtonWrapper = styled.div`
     display: flex;
-    align-items: center;
-`
+    align-items: flex-start;
+    flex-direction: column;
+`;
+
